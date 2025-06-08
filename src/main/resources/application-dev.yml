@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: journalApp
+
+  data:
+    mongodb:
+      uri: mongodb+srv://himanshu23hsd:reDgAvG3ulx6W0fM@cluster0.cliv3uq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
+      auto-index-creation: true
+
+  main:
+    allow-circular-references: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /journal
+
+logging:
+  level:
+    root: INFO
+    org.springframework.boot.context.config: DEBUG
